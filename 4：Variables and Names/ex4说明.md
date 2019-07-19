@@ -88,9 +88,9 @@
     输入：
   
     ```python
-  space_in_a_car = 4
+    space_in_a_car = 4
     drivers = 30
-  cars_driven = drivers
+    cars_driven = drivers
     carpool_capacity = cars_driven * space_in_a_car
     
     print("We can transport", car_pool_capacity,"people today.")
@@ -102,7 +102,7 @@
     Traceback (most recent call last):
     File "ex4.py", line 13, in <module>
         print("We can transport", car_pool_capacity,"people today.")
-  NameError: name 'car_pool_capacity' is not defined
+    NameError: name 'car_pool_capacity' is not defined
     ```
 
     变量名错误：`car_pool_capacity` 没有被定义。
@@ -118,13 +118,13 @@
     # print(space_in_a_car)
   
     space_in_a_car = 5
-print("space_in_a_car: ", space_in_a_car)
+    print("space_in_a_car: ", space_in_a_car)
     ```
   
     结果：
   
     ```powershell
-  space_in_a_car:  5
+    space_in_a_car:  5
     ```
   
     因为同一变量名，下面的赋值会覆盖上面的赋值。
@@ -150,10 +150,8 @@ print("space_in_a_car: ", space_in_a_car)
   语法错误：无效语法。
     
     如果没有逗号，`print()`在打印输出时遇到右引号时就以为命令已经结束了，就无法识别右引号后面的内容。
-    
-  * 
-  
-  * 运算式可以在`print()`中执行
+      
+* 运算式可以在`print()`中执行
   
     输入：
   
@@ -161,9 +159,9 @@ print("space_in_a_car: ", space_in_a_car)
     drivers = 30
     passengers = 90
     cars_driven = drivers
-  average_passengers_per_car = passengers / cars_driven
+    average_passengers_per_car = passengers / cars_driven
     
-  print("We need to put about", average_passengers_per_car, "in each car.")
+    print("We need to put about", average_passengers_per_car, "in each car.")
     print("We need to put about", passengers / cars_driven, "in each car.")
     ```
     
@@ -171,7 +169,7 @@ print("space_in_a_car: ", space_in_a_car)
     
     ```powershell
     We need to put about 3.0 in each car.
-  We need to put about 3.0 in each car.
+    We need to put about 3.0 in each car.
     ```
     
     上下两个`print()`函数的内容等价。

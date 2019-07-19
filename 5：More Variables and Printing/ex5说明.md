@@ -125,7 +125,7 @@
       File "ex5.py", line 24
       print(f"{my_height},f"{my_age}"")
                               ^
-  SyntaxError: invalid syntax
+    SyntaxError: invalid syntax
     ```
 
     语法错误：无效语法。
