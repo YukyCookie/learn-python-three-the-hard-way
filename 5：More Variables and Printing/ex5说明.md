@@ -27,10 +27,10 @@
 
   * `f`
 
-    * 变量字符串格式化输出
-  * 会将变量值类型转化为字符串输出
+    * 变量字符串格式化输出，将变量值融入句子中成为新的字符串输出
+    * 会将变量值类型转化为字符串输出
+    
     * `f`不能嵌套
-
   * `+`
 
     * 加法运算；连接字符串
@@ -57,6 +57,7 @@
       注意：不能将数字与字符串用 `+` 相连，会报错。
 
   * `round()`
+    
     * 四舍五入取整
     * `print(round(1.777))` 输出 `2`
 
@@ -105,93 +106,56 @@
 
 * 破坏代码（下面为错误情况及运行结果）
 
-  * `print`
+  * `f`嵌套
 
     输入：
 
     ```python
-    print "Hello World"
+    my_age = 35 # not a lie
+    my_height = 74 # inches
+  my_weight = 180 # lbs
+    
+  print(f"{my_height}, f"{my_age}"")
+    
     ```
-
+  
     结果：
-
+  
     ```powershell
-    PS F:\python\hard way 练习> python ex1.py
-      File "ex1.py", line 1
-        print "Hello World!"
-                           ^
-    SyntaxError: Missing parentheses in call to 'print'. Did you mean print("Hello World!")?
+    File "ex5.py", line 20
+      print(f"{my_height}, f"{my_age}"")
+                               ^
+  SyntaxError: invalid syntax
     ```
 
-    语法错误：调用`print`时缺少括号。
+    语法错误：无效语法。
 
-  * `print(`
-
+  * 字符串与数值变量或数字用`+`相连接
+  
     输入：
 
     ```python
-    print("Hello World!"
+  my_name = 'zed'
+    my_eyes = 'blue'
+    my_height = 74 
+    my_weight = 180 
+    
+    print(f"{my_height + my_weight}")
+    print(f"{my_height} + {my_weight}")
+    print(f"{my_name + my_eyes}")
+  print(f"{my_name} + {my_eyes}")
     ```
 
     结果：
 
     ```powershell
-    PS F:\python\hard way 练习> python ex1.py
-      File "ex1.py", line 10
-    
-        ^
-    SyntaxError: unexpected EOF while parsing
+  254
+    74 + 180
+    zedblue
+    zed + blue
     ```
 
     
-
-  * `print("`
-
-    输入：
-
-    ```python
-    print("Hello World!
-    print("Hello World!)
-    ```
-
-    结果：
-
-    ```powershell
-    PS F:\python\hard way 练习> python ex1.py
-      File "ex1.py", line 1
-        print("Hello World!
-                          ^
-    SyntaxError: EOL while scanning string literal
-    
-    PS F:\python\hard way 练习> python ex1.py
-      File "ex1.py", line 1
-        print("Hello World!)
-                           ^
-    SyntaxError: EOL while scanning string literal
-    ```
-
-    语法错误：检测到非法结束符。
-
-  * 在代码开始输入空格
-  
-    输入：
-  
-    ```python 
-     print("Hello World!")
-    # 前面有个空格
-    ```
-  
-    结果：
-  
-    ```powershell
-    PS F:\python\hard way 练习> python ex1.py
-      File "ex1.py", line 1
-        print("Hello World!")
-        ^
-    IndentationError: unexpected indent
-    ```
-  
-    缩进错误：意外缩进。
 
 
 
