@@ -1,6 +1,6 @@
 # EX2: Comments and Pound Characters
 
-* 例子：
+* ### 例子：
 
   ```python
   # A comment, this is so you can read your program laterself.
@@ -12,17 +12,17 @@
   print("This will run.")
   ```
   
-* 学习内容：`print()`；`#`；
+* ### 学习内容：`print()`；`#`；
 
   * 在“EX1：A Good First Program”中已有解释
 
-* 深入练习（Study Drills）
+* ### 深入练习（Study Drills）
 
   * 无特别问题
 
-* 破坏代码
+* ### 破坏代码
 
-  * `#`放入字符串中
+  * #### `#`放入字符串中
 
     输入：
 

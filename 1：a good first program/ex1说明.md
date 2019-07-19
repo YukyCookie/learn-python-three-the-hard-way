@@ -1,6 +1,6 @@
 # EX1: A Good First Program
 
-* 例子：
+* ### 例子：
 
   ```python
   print("Hello World!")
@@ -13,9 +13,9 @@
   print("I should word hard to get a job")
   ```
 
-* 学习内容：`print()`；`#`；
+* ### 学习内容：`print()`；`#`；
 
-  * `print()`
+  * #### `print()`
 
     * 用于打印输出
 
@@ -29,7 +29,7 @@
       
     * 一条`print`命令执行结束，会默认自动换行。
 
-  * `# 在这后面写下想要解释的内容或者不想运行的代码`
+  * #### `# 在这后面写下想要解释的内容或者不想运行的代码`
 
     * 注释
     * 不会运行，就是解释作用
@@ -38,15 +38,15 @@
       2. 如果想要取消注释，选中要取消注释的行，按`ctrl + /`，注释就会取消
       3. 是否为注释，就看行前面有没有`#`
 
-* 深入练习（Study Drills）
+* ### 深入练习（Study Drills）
 
-  * 模仿
+  * #### 模仿
 
     ```python
     print("make another line")
     ```
 
-  * 只显示一行
+  * #### 只显示一行
 
     ```python
     print("Hello World!")
@@ -59,9 +59,9 @@
     # print("I should word hard to get a job")
     ```
 
-* 破坏代码（下面为错误情况及运行结果）
+* ### 破坏代码（下面为错误情况及运行结果）
 
-  * `print`
+  * #### `print`
 
     输入：
 
@@ -81,7 +81,7 @@
 
     语法错误：调用`print`时缺少括号。
 
-  * `print(`
+  * #### `print(`
 
     输入：
 
@@ -99,21 +99,19 @@
     SyntaxError: unexpected EOF while parsing
     ```
 
-    
-
-  * `print("`
+  * #### `print("`
 
     输入：
 
     ```python
-    print("Hello World!
+  print("Hello World!
     print("Hello World!)
     ```
-
+  
     结果：
 
     ```powershell
-    PS F:\python\hard way 练习> python ex1.py
+  PS F:\python\hard way 练习> python ex1.py
       File "ex1.py", line 1
         print("Hello World!
                           ^
@@ -125,11 +123,11 @@
                            ^
     SyntaxError: EOL while scanning string literal
     ```
-
+  
     语法错误：检测到非法结束符。
 
-  * 在代码开始输入空格
-  
+  * #### 在代码开始输入空格
+
     输入：
   
     ```python 
