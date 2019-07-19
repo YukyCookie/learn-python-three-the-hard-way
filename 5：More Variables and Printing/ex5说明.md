@@ -113,9 +113,9 @@
     ```python
     my_age = 35
     my_height = 74
-  my_weight = 180
+    my_weight = 180
     
-  print(f"{my_height},f"{my_age}"")
+    print(f"{my_height},f"{my_age}"")
     ```
   
     结果：
@@ -125,7 +125,7 @@
       File "ex5.py", line 24
       print(f"{my_height},f"{my_age}"")
                               ^
-  SyntaxError: invalid syntax
+    SyntaxError: invalid syntax
     ```
 
     语法错误：无效语法。
