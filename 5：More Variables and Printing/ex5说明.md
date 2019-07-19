@@ -121,7 +121,7 @@
     结果：
   
     ```txt
-    File "ex5.py", line 20
+    File "ex5.py", line 34
         print(f"{my_height}, f"{my_age}"")
                              ^
     SyntaxError: invalid syntax
