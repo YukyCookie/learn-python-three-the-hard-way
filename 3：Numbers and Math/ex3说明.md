@@ -51,10 +51,10 @@
     ```python
     print("Is it greater?", 5 > --6 , --6) 
     print("Is it greater?", 5 > -6, -6)
-  print("Is it greater?", 5 > --2 , --2)
+    print("Is it greater?", 5 > --2 , --2)
     print("Is it greater?", 5 > -2 , -2)
     ```
-  ```
+    ```
   
     `print`的最后一项是为了验证`--i`和`-i`输出的数值，可以去掉。
   
@@ -62,13 +62,13 @@
   
     ```powershell
     PS F:\python\hard way 练习> python ex3.py
-  Is it greater? False 6
+    Is it greater? False 6
     Is it greater? True -6
-  Is it greater? True 2
+    Is it greater? True 2
     Is it greater? True -2
-  ```
+    ```
   
-  1. 不会报错，但是`python`没有`++`和`--`。
+    1. 不会报错，但是`python`没有`++`和`--`。
     2. 从以上结果可以看出，`--6`和`--2`在`python`中是`6`和`2`。
     3. 有时候在 Python 中看到存在 `++i` 这种形式，这其实不是自增，只是简单的表示正负数的符号而已。正正得正，负负得正，所以 `++i` 和 `--i` 都是 `i` 。
     4. `python`自增自减的表达为：`a = a + 1` 或 `a += 1  `

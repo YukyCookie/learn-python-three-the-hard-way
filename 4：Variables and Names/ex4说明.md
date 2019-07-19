@@ -98,7 +98,7 @@
   
     结果：
   
-  ```powershell
+    ```powershell
     Traceback (most recent call last):
     File "ex4.py", line 13, in <module>
         print("We can transport", car_pool_capacity,"people today.")
@@ -145,12 +145,12 @@
         print("There are" cars,"cars available.")
                              ^
     SyntaxError: invalid syntax
-  ```
-    
+    ```
+  
   语法错误：无效语法。
-    
+  
     如果没有逗号，`print()`在打印输出时遇到右引号时就以为命令已经结束了，就无法识别右引号后面的内容。
-      
+  
 * 运算式可以在`print()`中执行
   
     输入：
