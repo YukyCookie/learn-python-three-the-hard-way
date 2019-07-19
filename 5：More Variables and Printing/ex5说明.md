@@ -107,19 +107,19 @@
 * ### 破坏代码（下面为错误情况及运行结果）
 
   * #### `f`嵌套
-
+    
     输入：
 
     ```python
     my_age = 35
     my_height = 74
-  my_weight = 180
+    my_weight = 180
     
-  print(f"{my_height},f"{my_age}"")
+    print(f"{my_height},f"{my_age}"")
     ```
-  
+    
     结果：
-  
+
     ```txt
     PS F:\python\hard way 练习> python ex5.py
       File "ex5.py", line 24
@@ -129,33 +129,30 @@
     ```
 
     语法错误：无效语法。
+    
+  * #### 字符串与数值变量或数字用`+`相连接
 
-* #### 字符串与数值变量或数字用`+`相连接
-
-  输入：
-
-  ```python
-  my_name = 'zed'
-  my_eyes = 'blue'
-  my_height = 74 
-  my_weight = 180 
-  
-  print(f"{my_height + my_weight}")
-  print(f"{my_height} + {my_weight}")
-  print(f"{my_name + my_eyes}")
-  print(f"{my_name} + {my_eyes}")
-  ```
-
-  结果：
-
-  ```txt
-  254
-  74 + 180
-  zedblue
-  zed + blue
-  ```
-
-  
-
-
-
+    输入：
+    
+    ```python
+    my_name = 'zed'
+    my_eyes = 'blue'
+    my_height = 74 
+    my_weight = 180 
+    
+    print(f"{my_height + my_weight}")
+    print(f"{my_height} + {my_weight}")
+    print(f"{my_name + my_eyes}")
+    print(f"{my_name} + {my_eyes}")
+    ```
+    
+    结果：
+    
+    ```txt
+    254
+    74 + 180
+    zedblue
+    zed + blue
+    ```
+    
+    
