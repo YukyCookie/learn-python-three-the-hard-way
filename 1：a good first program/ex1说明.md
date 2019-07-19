@@ -104,14 +104,14 @@
     输入：
 
     ```python
-  print("Hello World!
+    print("Hello World!
     print("Hello World!)
     ```
   
     结果：
 
     ```powershell
-  PS F:\python\hard way 练习> python ex1.py
+    PS F:\python\hard way 练习> python ex1.py
       File "ex1.py", line 1
         print("Hello World!
                           ^
