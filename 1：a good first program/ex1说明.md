@@ -59,7 +59,7 @@
     # print("I should word hard to get a job")
     ```
 
-* ### 破坏代码（下面为错误情况及运行结果）
+* ### 改变代码（寻找可能情况及错误）
 
   * #### `print`
 
