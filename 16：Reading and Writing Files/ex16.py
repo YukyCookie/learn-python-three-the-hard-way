@@ -15,7 +15,6 @@ target = open(filename,'w')
 
 print("Truncating the file. Goodbye!")
 target.truncate()
-# print(repr(target.truncate()))
 
 print("Now I'm going to ask you for three lines>")
 

@@ -30,8 +30,6 @@ print(">>>>>to_file", repr(to_file))
 out_file.write(indata)
 # print(f"{exists(to_file)}")
 
-# out_file = open(to_file, 'w')
-# out_file.write(str(indata))
 # out_file = open(to_file, 'wb')
 # out_file.write(indata)
 

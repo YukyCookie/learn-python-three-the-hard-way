@@ -12,8 +12,21 @@ def rewind(f):
 
 def print_a_line(line_count, f):
     # print(">>> line_count:", line_count)
-    print(line_count, f.readline().strip('\n'))                             # 创建print_a_line函数，有两个参数，执行命令：打印f的一行内容
+    print(line_count, f.readline())                             # 创建print_a_line函数，有两个参数，执行命令：打印f的一行内容
     # print("<<< exit function print_a_line")
+
+# # 去掉输出空行
+# def print_a_line(line_count, f):
+#     print(line_count, f.readline(), end='')
+
+# def print_a_line(line_count, f):
+#     print(line_count, f.readline().strip())
+
+# def print_a_line(line_count, f):
+#     print(line_count, f.readline().split('\n')[0])
+
+# def print_a_line(line_count, f):
+#     print(line_count, f.readline().replace('\n', ''))
 
 current_file = open(input_file)                                 # 打开文件并返回文件对象，文件对象可以阅读文件，但是不是文件本身
 
@@ -39,12 +52,12 @@ print_a_line(current_line, current_file)                        # 再次调用�
 
 current_line = current_line + 1                                 # 2 + 1 赋值给current_line，此时参数line_count值为3
 print_a_line(current_line, current_file)                        # 再次调用，读下一行
-print(">>> 读完第三行当前指针位置：",current_file.tell())
+# print(">>> 读完第三行当前指针位置：",current_file.tell())
 
-print(">>> 执行rewind之前指针位置：",current_file.tell())
-rewind(current_file)
-print("<<< 执行rewind之后指针位置:",current_file.tell())
-print_all(current_file)
+# # 代替Let's print three lines:后面的内容
+# num = len(current_file.readlines())
+# rewind(current_file)
 
-# for i in range(1,4):
-#     print_a_line(i,current_file)
+# print("Let's print three lines:")
+# for i in range(1, num+1):
+#     print_a_line(i, current_file)

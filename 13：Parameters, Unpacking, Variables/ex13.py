@@ -5,7 +5,7 @@ from sys import argv
 # 若没有输入参数，运行会出错，参数不足，若输入超过所需参数，报错说参数过多
 script, first, second, third = argv
 first = int(first)
-
+   
 # # 可以通过print了解argv是什么
 # print(">>>>argv:", repr(argv))
 
@@ -30,7 +30,7 @@ print("Your third variable is:", third)
 print(f"{script} {first}")
 print(f"{first + second}") # 字符串相连
 
-# 20行数值只能是整数，21行可以是浮点数
+# 第一段数值只能是整数，第二段可以是浮点数
 print(f"{first+int(second)}") # 可以将这里的转化放到输入时进行
 print(f"{eval(first)+eval(third)}")
 

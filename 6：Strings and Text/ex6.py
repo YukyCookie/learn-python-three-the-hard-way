@@ -28,9 +28,10 @@ joke_evaluation2 = "Isn't that joke so funny?! "
 
 
 print(joke_evaluation1.format(hilarious))
-print(joke_evaluation2 + f"{hilarious}")
-# print(f"{joke_evaluation2 + hilarious}") 不可以，因为hilarious是Boolean类型，joke_evaluation是string类型 
-print(f"{joke_evaluation2}" + f"{hilarious}")
+# print(joke_evaluation2 + f"{hilarious}")
+# # print(f"{joke_evaluation2 + hilarious}") 不可以，因为hilarious是Boolean类型，joke_evaluation是string类型 
+# print(f"{joke_evaluation2}" + f"{hilarious}")
+# print(f"{joke_evaluation2}{hilarious}")
 
 w = "This is the left side of..."
 e = "a string with a right side."

@@ -25,3 +25,7 @@ end12 = "r"
 #关键字end可以用于将结果输出到同一行，或者在输出的末尾添加不同的字符
 print(end1 + end2 + end3 + end4 + end5 + end6, end=' ')
 print(end7 + end8 + end9 + end10 + end11 + end12)
+
+print("Cheese", end=' ')
+print("Burger", end='<<<end\n')
+print("a")

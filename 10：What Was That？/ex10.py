@@ -8,9 +8,7 @@ I'll do a list:
 \t* Fishies
 \t* Catnip\n\t* Grass
 """
-a = "\U89789999"
 
-print(a)
 print(tabby_cat)
 print(persian_cat)
 print(backslash_cat)
